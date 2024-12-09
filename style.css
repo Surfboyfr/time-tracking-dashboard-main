@@ -1,0 +1,142 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.container{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   width: 80%;
+   grid-gap: 1.5rem;
+   margin:  12% auto;
+   height: 450px;
+}
+.report{
+   grid-row: span 2;
+   border-radius: 15px;
+   height: 100%;
+   background: #f4f4f4;
+   background: hsl(235, 46%, 20%);
+   color: #fff;
+}
+.timeframe{
+   margin-top: 1rem;
+   padding-left: 1rem;
+}
+.timeframe p{
+   margin-bottom: 1rem;
+   color:  hsl(246, 80%, 60%);
+}
+.timeframe p:hover{
+   color: #fff;
+}
+
+
+
+.grid-item{
+   border-radius: 15px;
+   gap: 1rem;
+   background: #f4f4f4;
+   position: relative;
+}
+.grid-item img{
+  float: right;
+}
+.grid-card{
+   width: 100%;
+   height: 80%;
+   background-color: hsl(235, 46%, 20%);
+   color: white;
+   margin-top: -3rem;
+   position: absolute;
+   bottom: 0;
+   border-radius: 15px;
+   padding: 1rem;
+}
+.grid-card:hover{
+   background-color: hsl(236, 45%, 26%);
+}
+.grid-content{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.card{
+   background-color: hsl(246, 80%, 60%);
+   height: 70%;
+   border-radius: 10px;
+   width: 100%;
+   padding: 2rem;
+   color: white;
+}
+.card img{
+   margin-bottom: 2rem;
+}
+.card h1{
+   font-weight: 100;
+}
+
+
+.work{
+   background:  hsl(15, 100%, 70%);
+}
+.play{
+   background:  hsl(195, 74%, 62%);
+}
+.study{
+   background: hsl(348, 100%, 68%);
+}
+.exercise{
+   background: hsl(145, 58%, 55%);
+}
+.social{
+   background:  hsl(264, 64%, 52%);
+}
+.selfcare{
+   background: hsl(43, 84%, 65%);
+}
+
+@media (max-width: 768px) {
+
+   .container{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin:  2rem auto;
+      height: 100vh;
+      padding: 2rem;
+   }
+   .card{
+      display: flex;
+      
+   }
+   .card .img img{
+      width: 50%;
+      border-radius: 50%;
+      border: 5px solid white;
+   }
+   .report{
+      
+   }
+
+   .timeframe{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 2rem;
+   }
+   div .grid-item{
+      height: 200px;
+      
+   }
+   .grid-card.work{
+      height: 200px;
+      width: 100%;
+   }
+   #reportName{
+      
+   }
+   .img{
+      flex: 1;
+   }
+}

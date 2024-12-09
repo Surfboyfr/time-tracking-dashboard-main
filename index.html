@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+<div class="report">
+  <div class="card">
+    <div class="img"><img src="./images/image-jeremy.png" alt="" width="100px"></div>
+    
+  <div id="reportName">
+  <p>Report for</p>
+  <h1>Jeremy Robson</h1>
+</div>
+</div>
+<div class="timeframe">
+  <p id="daily-btn">Daily</p>
+  <p id="weekly-btn">Weekly</p>
+  <p id="monthly-btn">Monthly</p>
+</div>
+</div>
+  
+<div class="grid-item work">
+  <img src="./images/icon-work.svg" alt="">
+  <div class="grid-card">
+    <div class="grid-content" id="work">
+      <p>Work</p>
+      <img src="./images/icon-ellipsis.svg" alt="">
+    </div>
+    <div class="time">
+   <div class="daily">
+    <span id="hours">
+      <h1 id="workDailyHours">??</h1>
+      <p id="workPreviousWeek">??</p>
+ </span>
+   </div>
+  </div>
+  </div>
+</div>
+ 
+<div class="grid-item play"> 
+  <img src="./images/icon-play.svg" alt="">
+    <div class="grid-card">
+          <div class="grid-content" >
+            <p>Play</p>
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="time">
+            <div class="daily">
+             <span id="hours">
+               <h1 id="playDailyHours"></h1>
+               <p id="playPreviousWeek"></p>
+          </span>
+            </div>
+           </div>
+     
+
+  </div>
+</div>
+ 
+<div class="grid-item study"> 
+  <img src="./images/icon-study.svg" alt="">
+  <div class="grid-card">
+    <div class="grid-content ">
+      <p>Study</p>
+      <img src="./images/icon-ellipsis.svg" alt="">
+    </div>
+    <div class="time">
+      <div class="daily">
+       <span id="hours">
+         <h1 id="studyDailyHours"></h1>
+         <p id="studyPreviousWeek"></p>
+    </span>
+      </div>
+     </div>
+   
+  </div>
+ 
+</div>
+ 
+<div class="grid-item exercise">
+  <img src="./images/icon-exercise.svg" alt="">
+  <div class="grid-card">
+    <div class="grid-content">
+      <p>Exercise</p>
+      <img src="./images/icon-ellipsis.svg" alt="">
+    </div>
+    <div class="time">
+      <div class="daily">
+       <span id="hours">
+         <h1 id="exerciseDailyHours"></h1>
+         <p id="exercisePreviousWeek"></p>
+    </span>
+      </div>
+     </div>
+    
+  </div>
+</div>
+ 
+<div class="grid-item social">
+  <img src="./images/icon-social.svg" alt="">
+  <div class="grid-card">
+    <div class="grid-content ">
+      <p>Social</p>
+      <img src="./images/icon-ellipsis.svg" alt="">
+    </div>
+    <div class="time">
+      <div class="daily">
+       <span id="hours">
+         <h1 id="socialDailyHours"></h1>
+         <p id="socialPreviousWeek"></p>
+    </span>
+      </div>
+     </div>
+    
+  </div>
+</div>
+  
+<div class="grid-item selfcare">
+  <img src="./images/icon-self-care.svg" alt="">
+  <div class="grid-card">
+    <div class="grid-content">
+      <p>Self Care</p>
+      <img src="./images/icon-ellipsis.svg" alt="">
+    </div>
+    <div class="time">
+      <div class="daily">
+       <span id="hours">
+         <h1 id="selfDailyHours"></h1>
+         <p id="selfPreviousWeek"></p>
+    </span>
+      </div>
+     </div>
+   
+  </div>
+</div>
+</div>
+ 
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Adebogun Damola</a>.
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
